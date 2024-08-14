@@ -1,7 +1,7 @@
 {
   "transactions": [
     {
-      "id": 1,
+      "id": "1",
       "description": "Deselvovimento de site",
       "type": "income",
       "category": "Venda",
@@ -9,12 +9,36 @@
       "createdAt": "2024-08-14T09:48:01.265Z"
     },
     {
-        "id": 2,
-        "description": "Hamburger",
-        "type": "outcome",
-        "category": "Alimetanção",
-        "price": 50,
-        "createdAt": "2024-08-14T09:30:01.265Z"
-      }
+      "id": "2",
+      "description": "Hamburger",
+      "type": "outcome",
+      "category": "Alimetanção",
+      "price": 50,
+      "createdAt": "2024-08-14T09:30:01.265Z"
+    },
+    {
+      "id": "b096",
+      "description": "Desenvolvimento de app",
+      "price": 10000,
+      "category": "Venda",
+      "type": "income",
+      "createdAt": "2024-08-14T12:53:23.492Z"
+    },
+    {
+      "id": "281f",
+      "description": "Coca-cola",
+      "price": 10,
+      "category": "Alimentação",
+      "type": "income",
+      "createdAt": "2024-08-14T13:10:34.788Z"
+    },
+    {
+      "id": "554e",
+      "description": "coca cola",
+      "price": 10,
+      "category": "alimentação",
+      "type": "outcome",
+      "createdAt": "2024-08-14T13:11:02.379Z"
+    }
   ]
 }

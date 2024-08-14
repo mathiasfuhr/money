@@ -9,7 +9,9 @@ import { dataFormatter, priceformatter } from "../../utils/formatter"
 
 
 const Transactions = () => {
-  const { transactions } = useContext(TransactionsContext)
+  const { transactions } = useContext(TransactionsContext);
+
+  console.log("Transactions:", transactions); // Verifique se os dados estão corretos
 
   return (
     <div>
@@ -41,4 +43,4 @@ const Transactions = () => {
   )
 }
 
-export default Transactions
+export default Transactions;
