@@ -4,6 +4,7 @@ import Summary from "../../components/Summary"
 import SearchForm from "./components/SearchForm"
 import { PriceHightLight, TransactionsContainer, TransactionsTable } from "./styles"
 import { TransactionsContext } from "../../contexts/TransactionsContext"
+import { dataFormatter, priceformatter } from "../../utils/formatter"
 
 
 
@@ -25,11 +26,12 @@ const Transactions = () => {
                 <td width='50%'>{item.description}</td>
                 <td>
                   <PriceHightLight variant={item.type}>
-                    {item.price}
+                    {item.type === 'outcome' && '- '}
+                    {priceformatter.format(item.price)}
                   </PriceHightLight>
                 </td>
                 <td>{item.category}</td>
-                <td>{item.createdAt}</td>
+                <td>{dataFormatter.format(new Date(item.createdAt))}</td>
               </tr>
             ))}
           </tbody>
