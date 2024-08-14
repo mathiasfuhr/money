@@ -19,11 +19,11 @@ const NewTransactionModal = () => {
 
                     <TransitionType>
                         <TransitionType>
-                            <TransitionTypeButton variant='income'>
+                            <TransitionTypeButton variant='income' value='income'>
                                 <ArrowCircleUp size={24} />
                                 Entrada
                             </TransitionTypeButton>
-                            <TransitionTypeButton variant='outcome'>
+                            <TransitionTypeButton variant='outcome' value='outcome'>
                                 <ArrowCircleDown size={24} />
                                 Saída
                             </TransitionTypeButton>
